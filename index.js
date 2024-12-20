@@ -6,6 +6,10 @@ let starWarsLibrary = []; // variable biblioteca
 searchButton.addEventListener('click', () => {
   const searchText = searchInput.value.trim().toLowerCase();
 
+  if (empityinput()) {
+    return; // Si el campo está vacío, no continuar con la búsqueda
+  }
+
   if (searchText.length > 0) {
     searchCharacter(searchText);
   } else {
@@ -80,5 +84,15 @@ function displayCharacterNotFound() {
   characterResult.innerHTML = '<p>Personaje no encontrado :(</p>';
 }
 
+function empityinput() {
+  const text = searchInput.value.trim();
+  if (text === "") {
+    characterResult.innerHTML = '<p>Ingresa el nombre de un personaje de Star Wars</p>';
+    return true; // Si está vacío, retorna true
+  }
+  return false; // Si no está vacío, retorna false
+}
+
 fetchStarWarsLibrary();
+
 

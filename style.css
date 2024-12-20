@@ -1,0 +1,31 @@
+.principal {
+    font-family: Arial, sans-serif;
+}
+
+.content {
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; 
+    gap: 10px;
+}
+
+h1 {
+    text-align: center; 
+    margin: 0;
+}
+
+input {
+    border-radius: 0.5pc;
+    margin: 0;
+}
+
+#searchButton {
+    background-color: rgb(182, 194, 205);
+    border-radius: 2rem;
+}
+
+#searchButton:hover {
+    background-color: rgb(209, 200, 189);
+}
