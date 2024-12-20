@@ -1,2 +1,2 @@
 # link app
-https://denisexper.github.io/repa3/
+https://denisexper.github.io/poke_api
